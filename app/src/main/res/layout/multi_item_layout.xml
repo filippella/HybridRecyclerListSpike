@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/itemsPager"
+        android:layout_width="match_parent"
+        android:layout_height="196dp" />
+
+    <!--    android:background="#33b5e5"-->
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="16dp"
+        app:piv_animationType="scale"
+        app:piv_dynamicCount="true"
+        app:piv_interactiveAnimation="true"
+        app:piv_radius="10dp"
+        app:piv_selectedColor="@color/colorAccent"
+        app:piv_unselectedColor="@color/colorLightGray"
+        app:piv_viewPager="@id/itemsPager" />
+
+</FrameLayout>
